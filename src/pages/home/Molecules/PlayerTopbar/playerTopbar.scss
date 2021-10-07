@@ -1,0 +1,36 @@
+.player-topbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  i {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #2e2639;
+  }
+  i:first-of-type {
+    background-color: #7200a1;
+  }
+}
+.player-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 3px;
+  background-color: #2e2639;
+  li {
+    list-style: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #ccc;
+    cursor: pointer;
+    &:hover {
+      color: #fff;
+    }
+  }
+  li:first-child {
+    background-color: rgba(160, 160, 160, 0.507);
+    color: rgb(255, 255, 255);
+  }
+}

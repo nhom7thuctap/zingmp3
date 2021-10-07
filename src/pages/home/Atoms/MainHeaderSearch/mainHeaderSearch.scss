@@ -1,0 +1,20 @@
+.search-wrapper {
+  position: relative;
+  input {
+    width: 500px;
+    outline: none;
+    border: none;
+    background-color: #2e2639;
+    padding: 10px 32px;
+    border-radius: 20px;
+    color: white;
+  }
+  i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    z-index: 1;
+    color: rgba(255, 255, 255, 0.527);
+  }
+}

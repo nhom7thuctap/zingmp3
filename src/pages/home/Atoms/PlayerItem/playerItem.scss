@@ -1,0 +1,108 @@
+.player-song-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 5px;
+  font-size: 12px;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.199);
+    div {
+      i {
+        display: inline-block;
+      }
+    }
+  }
+  div {
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .song-image {
+    position: relative;
+    img {
+      display: block;
+      width: 50px;
+      height: 50px;
+      padding: 7px;
+    }
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 18px;
+      z-index: 1;
+      color: #eee;
+      display: none;
+    }
+  }
+  .song-info {
+    margin-left: 10px;
+  }
+  .song-name {
+    font-size: 12px;
+  }
+  .song-singer {
+    color: rgba(238, 238, 238, 0.589);
+    font-size: 11px;
+    &:hover {
+      color: #d46fff;
+    }
+  }
+  .song-singer:hover {
+    text-decoration: underline;
+  }
+  .song-btn {
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    transform: translate(-50%, -50%);
+    // opacity: 0
+  }
+  .song-btn-icon {
+    position: relative;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 50%;
+    display: none;
+    span {
+      position: absolute;
+      top: -12px;
+      left: 20%;
+      transform: translate(-50%, -50%);
+      padding: 5px;
+      background-color: rgba(129, 124, 124, 0.26);
+      border-radius: 10px;
+      font-size: 10px;
+      text-align: center;
+      display: none;
+      width: 100px;
+    }
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.233);
+      span {
+        display: inline-block;
+      }
+    }
+  }
+}
+.song-active {
+  background-color: #7200a1;
+  &:hover {
+    background-color: #7200a1;
+  }
+  i {
+    display: inline-block;
+  }
+  div {
+    a {
+      .song-singer {
+        color: #fff;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

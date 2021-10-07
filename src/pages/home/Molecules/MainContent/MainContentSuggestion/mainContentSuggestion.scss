@@ -1,0 +1,13 @@
+.main-suggestion-wrapper {
+  h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+  }
+  .main-suggestion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+}

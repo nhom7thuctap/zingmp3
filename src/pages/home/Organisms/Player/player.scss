@@ -1,0 +1,27 @@
+.player {
+  background-color: #170f23;
+  color: white;
+  width: 450px;
+  height: 100vh;
+  padding: 10px 5px;
+  overflow-y: auto;
+  border-left: 1px solid rgba(238, 238, 238, 0.178);
+  overflow-x: auto;
+}
+
+.next-info {
+  padding: 10px;
+  h4 {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  p {
+    font-size: 11px;
+    font-weight: 300;
+    span {
+      font-size: 11px;
+      font-weight: 300;
+      color: #cb51ff;
+    }
+  }
+}
