@@ -1,6 +1,6 @@
 import './mainContentXone.scss';
 import './mainContentXone.scss';
-import MainItem from '../../Atoms/MainItem/MainItem';
+import MainItem from '../../../Atoms/MainItem/MainItem';
 
 const listXoneItem = [
   {
