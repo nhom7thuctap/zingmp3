@@ -1,0 +1,27 @@
+.musicPlayer-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+  .icon {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+      list-style: none;
+      &:not(:first-child) {
+        margin-left: 12px;
+      }
+      img {
+        width: 30px;
+        height: 20px;
+        filter: invert(1);
+        cursor: not-allowed;
+      }
+    }
+    .seekbar {
+      height: 2px;
+    }
+  }
+}

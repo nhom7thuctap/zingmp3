@@ -7,6 +7,21 @@
   overflow-y: auto;
   border-left: 1px solid rgba(238, 238, 238, 0.178);
   overflow-x: auto;
+  &::-webkit-scrollbar {
+    width: 5px; /* Chiều rộng vùng chứa scrollbar */
+    opacity: 0;
+    background: transparent;
+  }
+  &::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.13); /* Màu nền ngoài của thanh scrollbar */
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #918f8f80; /* Màu của thanh cuộn (scroll thumb) */
+    border-radius: 5px; /* Bo góc scroll thumb */
+  }
+  &::-webkit-scrollbar:hover {
+    opacity: 1;
+  }
 }
 
 .next-info {
