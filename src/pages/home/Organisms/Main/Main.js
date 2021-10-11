@@ -1,6 +1,6 @@
 import './Main.scss';
 import MainHeader from '../../Molecules/MainHeader/MainHeader';
-import SliderList from './SliderList';
+import MainContentSlider from '../../Molecules/MainContent/MainContentSlider/MainContentSlider';
 import MainContentSuggestion from '../../Molecules/MainContent/MainContentSuggestion/MainContentSuggestion';
 import MainContentXone from '../../Molecules/MainContent/MainContentXone/MainContentXone';
 
@@ -8,7 +8,7 @@ function Main() {
   return (
     <div className="main">
       <MainHeader />
-      <SliderList />
+      <MainContentSlider />
       <MainContentSuggestion />
       <MainContentXone />
     </div>

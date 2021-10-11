@@ -2,6 +2,7 @@ import './mainContentSlider.scss';
 import React, { useState, useEffect } from 'react';
 import db from '../../PlayerItems/ListSong';
 import { onSnapshot, collection } from 'firebase/firestore';
+import MainContentSliderItem from '../../../Atoms/MainContentSliderItem/MainContentSliderItem';
 
 function MainContentSlider() {
   const [listImg, setListImg] = useState([]);
@@ -15,9 +16,10 @@ function MainContentSlider() {
   return (
     <div className="list-img">
       {listImg.map((item) => (
-        <div className="img-item">
-          <img src={item.item} alt=""></img>
-        </div>
+        // <div className="img-item">
+        <MainContentSliderItem key={item.id} item={item.item} />
+        // <img src={item.item} alt=""></img>
+        // </div>
       ))}
       <span className="slider-button prev">
         <i className="fas fa-chevron-left"></i>
