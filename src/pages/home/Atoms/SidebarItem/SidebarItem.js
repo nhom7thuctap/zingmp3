@@ -1,11 +1,8 @@
 import './sidebarItem.scss';
 
-function SidebarItem({ icon, menuName, isActive = true, isLive = false }) {
+function SidebarItem({ icon, menuName, isActive = false, isLive = false }) {
   return (
-    <div
-      // className={`sidebar-item ${isActive ? 'sidebar-item_active' : ''}`}
-      className={`sidebar-item ${isActive ? 'siderbar-item_active' : ''}`}
-    >
+    <div className={`sidebar-item ${isActive ? 'sidebar-item_active' : ''}`}>
       <i className={icon}></i>
       <p>{menuName}</p>
       {isLive ? <span>Live</span> : ''}

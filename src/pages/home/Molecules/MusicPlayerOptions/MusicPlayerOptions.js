@@ -10,13 +10,13 @@ function MusicPlayerOptions() {
           <img src="http://cdn.onlinewebfonts.com/svg/img_224993.png" alt="" />
         </li>
         <li>
-          <i class="fas fa-microphone-alt"></i>
+          <i className="fas fa-microphone-alt"></i>
         </li>
         <li>
-          <i class="far fa-window-maximize"></i>
+          <i className="far fa-window-maximize"></i>
         </li>
         <li>
-          <i class="fas fa-volume-up"></i>
+          <i className="fas fa-volume-up"></i>
         </li>
       </ul>
 

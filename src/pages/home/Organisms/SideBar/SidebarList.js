@@ -10,6 +10,7 @@ const listItem = [
     icon: 'far fa-dot-circle',
     menuName: 'Khám phá',
     isActive: true,
+    // isLive: true,
   },
   {
     icon: 'fas fa-chart-line',
