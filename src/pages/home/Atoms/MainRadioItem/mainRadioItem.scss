@@ -1,0 +1,105 @@
+.radio-item {
+  //   width: calc(14.28% - 10px);
+  color: #fff;
+  overflow: hidden;
+  .radio-img {
+    position: relative;
+    border-radius: 50%;
+    .img {
+      overflow: hidden;
+      position: relative;
+      background-color: rgb(8, 158, 163);
+      border-radius: 50%;
+      padding: 1px;
+
+      img {
+        transition: all.5s;
+        display: block;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      .blur {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: 0.5s ease;
+        background-color: #00000086;
+        z-index: 1;
+      }
+    }
+    .play-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+      transition: all.3s;
+      i {
+        font-size: 38px;
+      }
+    }
+    .thumbnail {
+      position: absolute;
+      bottom: 0;
+      right: -5px;
+      padding: 1px;
+      border-radius: 50%;
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+      img {
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+    .live {
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 2px 5px;
+      background-color: #f00;
+      border-radius: 5px;
+      font-size: 8px;
+      font-weight: 600;
+      line-height: 8px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    &:hover {
+      .img {
+        img {
+          transform: scale(1.1);
+        }
+      }
+      .play-btn {
+        display: inline-block;
+      }
+    }
+  }
+  .radio-name {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    :hover {
+      color: #c662ef;
+    }
+  }
+  .radio-listening {
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}

@@ -60,6 +60,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #fff;
     span {
       align-items: center;
       margin: 0 15px;
@@ -80,8 +81,8 @@
         transition: all.1s;
         &::-webkit-slider-thumb {
           -webkit-appearance: none;
-          width: 20px;
-          height: 20px;
+          width: 10px;
+          height: 10px;
           background: rgb(97, 96, 96);
           box-shadow: 550px 0px 0px 540px #f5f5f58f;
         }
@@ -89,7 +90,7 @@
     }
     &:hover {
       input[type='range'] {
-        height: 7px;
+        height: 10px;
         &::-webkit-slider-thumb {
           -webkit-appearance: textfield;
         }

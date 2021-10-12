@@ -2,13 +2,15 @@ import './musicPlayerController.scss';
 import React, { useState, useEffect } from 'react';
 
 function MusicPlayerController() {
-  const [value, onChange] = useState(1);
+  const [value, onChange] = useState(0);
   useEffect(() => {
     const ele = document.querySelector('.buble');
     if (ele) {
       ele.style.left = `${Number(value / 4)}px`;
     }
   });
+  const isHaveZero1 = Math.floor(value / 60).toString().length < 2;
+  const isHaveZero2 = (value % 60).toString().length < 2;
   return (
     <div className="musicPlayer-controller">
       <ul className="controller-btn">
@@ -42,12 +44,16 @@ function MusicPlayerController() {
       </ul>
 
       <div className="musicPlayer-timeLine">
-        <span className="time-begin">{value}</span>
+        <span className="time-begin">
+          {isHaveZero1 ? '0' : ''}
+          {Math.floor(value / 60)}:{isHaveZero2 ? '0' : ''}
+          {value % 60}
+        </span>
         <div className="time-line">
           <input
             type="range"
             min="1"
-            max="100"
+            max="300"
             value={value}
             onChange={({ target: { value: radius } }) => {
               onChange(radius);

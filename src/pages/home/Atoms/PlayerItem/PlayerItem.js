@@ -3,7 +3,10 @@ import './playerItem.scss';
 // function create
 function PlayerItem({ song }) {
   return (
-    <div className={`player-song-item ${song.isPlay ? 'song-active' : ''}`}>
+    <div
+      className={`player-song-item ${song.className}
+       ${song.isPlay ? 'song-active' : ''}`}
+    >
       <div className="song-image">
         <img src={song.thumbnail} alt=""></img>
         <i className="fas fa-play"></i>

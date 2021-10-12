@@ -88,7 +88,8 @@
   }
 }
 .song-active {
-  background-color: #7100a100;
+  background: rgba(2, 2, 2, 0);
+
   &:hover {
     background-color: #7200a1;
   }

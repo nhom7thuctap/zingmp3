@@ -6,6 +6,7 @@ import PlayerItem from '../../Atoms/PlayerItem/PlayerItem';
 
 function PlayerCurrent() {
   const [listSong, setListSong] = useState([]);
+
   useEffect(
     () =>
       onSnapshot(collection(db, 'ListSong'), (snapshot) =>
@@ -15,7 +16,7 @@ function PlayerCurrent() {
   );
 
   return (
-    <div className="songCurrent">
+    <div className={'songCurrent'}>
       {listSong.map((song) => (
         <>{song.isPlay ? <PlayerItem key={song.id} song={song} /> : ''}</>
       ))}
