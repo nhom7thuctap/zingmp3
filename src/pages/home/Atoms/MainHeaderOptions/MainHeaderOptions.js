@@ -4,7 +4,7 @@ function MainHeaderOptions() {
   return (
     <ul className="options-wrapper">
       <li>
-        <i className="fas fa-tshirt"></i>
+        <i className="theme fas fa-tshirt"></i>
         <span>Chủ đề</span>
       </li>
       <li>

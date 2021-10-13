@@ -10,17 +10,3 @@
     font-weight: 400;
   }
 }
-.button {
-  display: block;
-  margin: 20px auto 0;
-  padding: 10px 40px;
-  border-radius: 20px;
-  background: inherit;
-  outline: none;
-  border: 1px solid #fff;
-  color: #fff;
-  &:hover {
-    cursor: pointer;
-    background: #47006657;
-  }
-}

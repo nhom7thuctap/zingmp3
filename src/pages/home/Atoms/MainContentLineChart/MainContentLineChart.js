@@ -19,42 +19,46 @@ function MainContentLineChart() {
     datasets: [
       {
         label: 'My First Dataset',
-        data: [65, 59, 80, 81, 56, 55, 68, 66, 80, 91, 55, 40],
+        data: [65, 59, 80, 81, 56, 55, 68, 66, 80, 91, 71, 80],
         fill: false,
-        borderColor: '#00f',
+        borderColor: 'rgb(85,136,208)',
         tension: 0.1,
       },
       {
         label: 'My 2nd Dataset',
         data: [60, 50, 70, 75, 50, 45, 45, 60, 77, 60, 68, 55],
         fill: false,
-        borderColor: '#0f0',
+        borderColor: 'rgb(80,218,179)',
         tension: 0.1,
       },
       {
         label: 'My 3rd Dataset',
         data: [40, 44, 60, 55, 30, 41, 43, 53, 71, 56, 60, 51],
         fill: false,
-        borderColor: '#f00',
+        borderColor: 'rgb(196,49,95)',
         tension: 0.1,
       },
     ],
   };
+  const options = {
+    maintainAspectRatio: false,
+    scales: {
+      y: {
+        beginAtZero: true,
+        display: false,
+      },
+    },
+    plugins: {
+      legend: {
+        display: false,
+      },
+    },
+  };
+
   return (
-    <Line
-      data={data}
-      width={600}
-      height={400}
-      options={{
-        maintainAspectRatio: false,
-        scales: {
-          y: {
-            beginAtZero: true,
-          },
-        },
-      }}
-    />
+    <div className="line-chart">
+      <Line data={data} width={750} height={280} options={options} />
+    </div>
   );
 }
-
 export default MainContentLineChart;

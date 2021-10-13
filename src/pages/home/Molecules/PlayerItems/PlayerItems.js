@@ -17,7 +17,11 @@ function PlayerItems() {
 
   function createListSong() {
     const song = listSong.map((song) => {
-      return song.isPlay ? '' : <PlayerItem key={song.id} song={song} />;
+      return song.isPlay ? (
+        ''
+      ) : (
+        <PlayerItem className="bgc-grey" key={song.id} song={song} />
+      );
     });
     return song;
   }

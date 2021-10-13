@@ -1,12 +1,15 @@
-.musicPlayer {
+.musicPlayer-wrapper {
   position: fixed;
   bottom: 0;
-  background-color: #120c1c;
   width: 100%;
+  z-index: 100;
+}
+.musicPlayer {
+  position: relative;
+  background-color: #120c1c;
   height: 90px;
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 100;
 }

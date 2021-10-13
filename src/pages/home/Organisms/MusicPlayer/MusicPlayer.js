@@ -5,10 +5,12 @@ import MusicPlayerOptions from '../../Molecules/MusicPlayerOptions/MusicPlayerOp
 
 function MusicPlayer() {
   return (
-    <div className="musicPlayer">
-      <MusicPlayerCurrent />
-      <MusicPlayerController />
-      <MusicPlayerOptions />
+    <div className="musicPlayer-wrapper">
+      <div className="musicPlayer">
+        <MusicPlayerCurrent />
+        <MusicPlayerController />
+        <MusicPlayerOptions />
+      </div>
     </div>
   );
 }

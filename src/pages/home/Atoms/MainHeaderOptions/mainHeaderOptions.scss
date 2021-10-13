@@ -43,6 +43,15 @@
       font-size: 16px;
       color: #fff;
     }
+    .theme {
+      background: -webkit-linear-gradient(
+        rgb(255, 0, 0),
+        rgb(251, 255, 0),
+        rgb(0, 247, 255)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
     img {
       border-radius: 50%;
       width: 40px;

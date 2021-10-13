@@ -6,7 +6,7 @@ function MainRadioItem({ item }) {
       <div className="radio-img">
         <div className="img">
           <img src={item.img} alt="" />
-          <div className="blur"></div>
+          <div className="overlay"></div>
         </div>
         <span className="play-btn">
           <i className="far fa-play-circle"></i>

@@ -18,7 +18,13 @@ function PlayerCurrent() {
   return (
     <div className={'songCurrent'}>
       {listSong.map((song) => (
-        <>{song.isPlay ? <PlayerItem key={song.id} song={song} /> : ''}</>
+        <>
+          {song.isPlay ? (
+            <PlayerItem className="selected" key={song.id} song={song} />
+          ) : (
+            ''
+          )}
+        </>
       ))}
     </div>
   );

@@ -16,9 +16,15 @@ function MainContentRadio() {
     []
   );
   return (
-    <div class="main-radio">
+    <div className="main-radio">
       <h2>Radio Nổi bật</h2>
       <div className="main-radio-wrapper">
+        <span className="radio-button prev">
+          <i className="fas fa-chevron-left"></i>
+        </span>
+        <span className="radio-button next">
+          <i className="fas fa-chevron-right"></i>
+        </span>
         {listRadio.map((item) => (
           <MainRadioItem key={item.id} item={item} />
         ))}

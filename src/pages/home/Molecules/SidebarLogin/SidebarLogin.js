@@ -5,7 +5,7 @@ function SidebarLogin() {
   return (
     <div className="sidebar-login">
       <p>Đăng nhập để khám phá những playlist dành riêng cho chính bạn.</p>
-      <Button text="Đăng nhập" className="button" />
+      <Button text="Đăng nhập" />
     </div>
   );
 }

@@ -1,15 +1,15 @@
 import './playerItem.scss';
 
 // function create
-function PlayerItem({ song }) {
+function PlayerItem({ song, className }) {
   return (
     <div
-      className={`player-song-item ${song.className}
+      className={`player-song-item ${className}
        ${song.isPlay ? 'song-active' : ''}`}
     >
       <div className="song-image">
         <img src={song.thumbnail} alt=""></img>
-        <i className="fas fa-play"></i>
+        <i className="play-icon fas fa-play"></i>
       </div>
       <div className="song-info">
         <p className="song-name">{song.name}</p>
@@ -18,10 +18,10 @@ function PlayerItem({ song }) {
         </a>
       </div>
       <div className="song-btn">
-        <i className="far fa-heart song-btn-icon">
+        <i className="option-icon far fa-heart song-btn-icon">
           <span>Thêm vào thư viện</span>
         </i>
-        <i className="fas fa-ellipsis-h song-btn-icon">
+        <i className="option-icon fas fa-ellipsis-h song-btn-icon">
           <span>Khác</span>
         </i>
       </div>

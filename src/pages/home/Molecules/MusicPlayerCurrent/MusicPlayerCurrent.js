@@ -16,11 +16,15 @@ function MusicPlayerCurrent() {
   );
   return (
     <div className="musicPlayer-current">
-      <div className="songCurrent">
-        {listSong.map((song) => (
-          <>{song.isPlay ? <PlayerItem key={song.id} song={song} /> : ''}</>
-        ))}
-      </div>
+      {listSong.map((song) => (
+        <>
+          {song.isPlay ? (
+            <PlayerItem className="music-player" key={song.id} song={song} />
+          ) : (
+            ''
+          )}
+        </>
+      ))}
     </div>
   );
 }

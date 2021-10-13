@@ -4,14 +4,14 @@
   position: relative;
   border-radius: 5px;
   font-size: 12px;
-  &:hover {
-    background-color: rgba(255, 255, 255, 0.199);
-    div {
-      i {
-        display: inline-block;
-      }
-    }
-  }
+  // background-color: #fff;
+  // &:hover {
+  //   div {
+  //     i {
+  //       display: inline-block;
+  //     }
+  //   }
+  // }
   div {
     a {
       text-decoration: none;
@@ -87,12 +87,73 @@
     }
   }
 }
-.song-active {
-  background: rgba(2, 2, 2, 0);
-
+.selected {
+  background-color: #7200a1;
+  div {
+    .play-icon {
+      display: inline-block;
+    }
+  }
   &:hover {
     background-color: #7200a1;
+    div {
+      i {
+        display: inline-block;
+      }
+    }
   }
+}
+.bgc-grey:hover {
+  background-color: rgba(255, 255, 255, 0.123);
+  div {
+    i {
+      display: inline-block;
+    }
+  }
+}
+.music-player {
+  width: 100%;
+  .song-image {
+    img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      border: solid 1px rgba(255, 255, 255, 0.342);
+    }
+  }
+  .song-info {
+    .song-name {
+      font-size: 14px;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  .song-btn {
+    .option-icon {
+      display: inline-block;
+    }
+  }
+  &:hover {
+    div {
+      .option-icon {
+        display: inline-block;
+      }
+      a {
+        .song-singer {
+          &:hover {
+            color: rgb(231, 89, 250);
+          }
+        }
+      }
+    }
+  }
+}
+.song-active {
   i {
     display: inline-block;
   }
