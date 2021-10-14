@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import db from '../../PlayerItems/ListSong';
 import { onSnapshot, collection } from 'firebase/firestore';
 
-function MainContentRadio() {
+function MainContentRadio(className) {
   const [listRadio, setListRadio] = useState([]);
   useEffect(
     () =>
@@ -16,7 +16,7 @@ function MainContentRadio() {
     []
   );
   return (
-    <div className="main-radio">
+    <div className={`main-radio ${className}`}>
       <h2>Radio Nổi bật</h2>
       <div className="main-radio-wrapper">
         <span className="radio-button prev">

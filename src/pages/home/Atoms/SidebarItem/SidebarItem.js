@@ -1,12 +1,19 @@
 import './sidebarItem.scss';
+import { NavLink } from 'react-router-dom';
+import { exact } from 'prop-types';
 
-function SidebarItem({ icon, menuName, isActive = false, isLive = false }) {
+function SidebarItem({ item }) {
   return (
-    <div className={`sidebar-item ${isActive ? 'sidebar-item_active' : ''}`}>
-      <i className={icon}></i>
-      <p>{menuName}</p>
-      {isLive ? <span>Live</span> : ''}
-    </div>
+    <NavLink
+      to={item.link}
+      exact={true}
+      activeClassName="sidebar-item_active"
+      className="sidebar-item "
+    >
+      <i className={item.icon}></i>
+      <p>{item.menuName}</p>
+      {item.isLive ? <span>Live</span> : ''}
+    </NavLink>
   );
 }
 

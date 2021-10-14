@@ -5,7 +5,7 @@ import MainContentChartCard from '../../../Atoms/MainContentChartCard/MainConten
 
 function MainContentChart() {
   return (
-    <div class="chart">
+    <div className="chart">
       <div className="main-chart-wrapper">
         <div className="title">
           <h1>#zingchart </h1>

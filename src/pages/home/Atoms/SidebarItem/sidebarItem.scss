@@ -4,11 +4,14 @@
   padding: 10px 20px;
   position: relative;
   color: #ccc;
+  text-decoration: none;
   i {
     font-size: 20px;
   }
   p {
+    font-weight: 600;
     margin-left: 10px;
+    text-transform: capitalize;
   }
   &:hover {
     cursor: pointer;
@@ -41,6 +44,7 @@
   }
 }
 .sidebar-item_active {
+  color: #fff;
   background-color: #3b3244;
   border-left: 2px solid #7200a1;
 }
