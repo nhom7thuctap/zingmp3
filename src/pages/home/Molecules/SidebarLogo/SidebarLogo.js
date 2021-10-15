@@ -1,10 +1,10 @@
 import './sidebarLogo.scss';
-
+import { Link } from 'react-router-dom';
 function SidebarLogo() {
   return (
-    <div className="logo">
+    <Link to="/" className="logo">
       <img src="/images/logo-dark.svg" alt="ZingMP3" />
-    </div>
+    </Link>
   );
 }
 

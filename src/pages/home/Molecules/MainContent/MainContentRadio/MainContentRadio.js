@@ -4,6 +4,13 @@ import React, { useState, useEffect } from 'react';
 import db from '../../PlayerItems/ListSong';
 import { onSnapshot, collection } from 'firebase/firestore';
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Navigation, Autoplay } from 'swiper';
+import 'swiper/swiper-bundle.min.css';
+import 'swiper/swiper.min.css';
+import 'swiper/components/navigation/navigation.scss';
+SwiperCore.use([Navigation, Autoplay]);
+
 function MainContentRadio(className) {
   const [listRadio, setListRadio] = useState([]);
   useEffect(
@@ -19,15 +26,13 @@ function MainContentRadio(className) {
     <div className={`main-radio ${className}`}>
       <h2>Radio Nổi bật</h2>
       <div className="main-radio-wrapper">
-        <span className="radio-button prev">
-          <i className="fas fa-chevron-left"></i>
-        </span>
-        <span className="radio-button next">
-          <i className="fas fa-chevron-right"></i>
-        </span>
-        {listRadio.map((item) => (
-          <MainRadioItem key={item.id} item={item} />
-        ))}
+        <Swiper spaceBetween={20} slidesPerView={7} navigation>
+          {listRadio.map((item) => (
+            <SwiperSlide>
+              <MainRadioItem key={item.id} item={item} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </div>
   );

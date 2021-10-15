@@ -1,8 +1,8 @@
 import './mainItem.scss';
 
-const MainItem = ({ item }) => {
+const MainItem = ({ item, className }) => {
   return (
-    <div className="main-item">
+    <div className={`main-item ${className}`}>
       <div className="item-img">
         <div className="img-btn-wrapper">
           <div className="img-btn">

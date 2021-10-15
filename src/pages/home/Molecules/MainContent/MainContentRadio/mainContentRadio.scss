@@ -9,38 +9,19 @@
   .main-radio-wrapper {
     margin-top: 20px;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: relative;
     z-index: 1;
-    .radio-button {
+    .swiper-button-prev,
+    .swiper-button-next {
+      position: absolute;
+      top: 35%;
+      width: 50px;
+      height: 50px;
       padding: 10px;
+      background-color: rgba(206, 206, 206, 0.932);
       border-radius: 50%;
-      background-color: rgba(255, 255, 255, 0.74);
-      z-index: 100;
-      display: none;
-      i {
-        font-size: 22px;
-        color: #000;
-      }
-    }
-    .prev {
-      position: absolute;
-      top: 40%;
-      left: 10px;
-      transform: translate(-50%, -50%);
-    }
-    .next {
-      position: absolute;
-      top: 40%;
-      right: -20px;
-      transform: translate(-50%, -50%);
-    }
-    &:hover {
-      .radio-button {
-        display: inline-block;
-      }
+      color: rgb(65, 65, 65);
+      z-index: 10;
     }
   }
 }

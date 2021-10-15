@@ -1,4 +1,4 @@
-import './mainContentSuggestion.scss';
+import './mainContentMusicNew.scss';
 import React, { useState, useEffect } from 'react';
 import db from '../../PlayerItems/ListSong';
 import { onSnapshot, collection } from 'firebase/firestore';
@@ -9,9 +9,10 @@ import SwiperCore, { Navigation, Autoplay } from 'swiper';
 import 'swiper/swiper-bundle.min.css';
 import 'swiper/swiper.min.css';
 import 'swiper/components/navigation/navigation.scss';
+import 'swiper/';
 SwiperCore.use([Navigation, Autoplay]);
 
-function MainContentSuggestion() {
+function MainContentMusicNew() {
   const [listItem, setListItem] = useState([]);
   useEffect(
     () =>
@@ -21,9 +22,9 @@ function MainContentSuggestion() {
     []
   );
   return (
-    <div className="main-suggestion-wrapper">
-      <h3>Nhạc Hay Nghe Ngay</h3>
-      <div className="main-suggestion">
+    <div className="music-new-wrapper">
+      <h2 className="title">nhạc mới mỗi ngày</h2>
+      <div className="music-new-list">
         <Swiper spaceBetween={30} slidesPerView={5}>
           {listItem.map((item) => (
             <SwiperSlide>
@@ -36,4 +37,4 @@ function MainContentSuggestion() {
   );
 }
 
-export default MainContentSuggestion;
+export default MainContentMusicNew;
