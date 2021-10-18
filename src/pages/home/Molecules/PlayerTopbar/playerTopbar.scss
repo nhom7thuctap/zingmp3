@@ -2,6 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  padding: 10px 0;
+  background-color: #170f23;
+  z-index: 1000;
   i {
     padding: 10px;
     border-radius: 50%;

@@ -1,6 +1,5 @@
 import './sidebarItem.scss';
 import { NavLink } from 'react-router-dom';
-import { exact } from 'prop-types';
 
 function SidebarItem({ item }) {
   return (

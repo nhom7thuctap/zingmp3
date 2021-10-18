@@ -1,35 +1,35 @@
-import './mainContentRadio.scss';
-import MainRadioItem from '../../../Atoms/MainRadioItem/MainRadioItem';
+import './mainContentEvent.scss';
 import React, { useState, useEffect } from 'react';
 import db from '../../PlayerItems/ListSong';
 import { onSnapshot, collection } from 'firebase/firestore';
-
+import MainContentEventItem from '../../../Atoms/MainContentEventItem/MainContentEventItem';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Autoplay } from 'swiper';
 import 'swiper/swiper-bundle.min.css';
 import 'swiper/swiper.min.css';
 import 'swiper/components/navigation/navigation.scss';
+import 'swiper/';
 SwiperCore.use([Navigation, Autoplay]);
 
-function MainContentRadio({ className }) {
-  const [listRadio, setListRadio] = useState([]);
+function MainContentEvent() {
+  const [listEvent, setListEvent] = useState([]);
   useEffect(
     () =>
-      onSnapshot(collection(db, 'ListRadio'), (snapshot) =>
-        setListRadio(
+      onSnapshot(collection(db, 'ListEven'), (snapshot) =>
+        setListEvent(
           snapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id }))
         )
       ),
     []
   );
   return (
-    <div className={`main-radio ${className}`}>
-      <h2>Radio Nổi bật</h2>
-      <div className="main-radio-wrapper">
-        <Swiper spaceBetween={20} slidesPerView={7} navigation>
-          {listRadio.map((item) => (
+    <div className="main-event-wrapper">
+      <h3>Sự Kiện</h3>
+      <div className="main-event">
+        <Swiper spaceBetween={30} slidesPerView={3}>
+          {listEvent.map((item) => (
             <SwiperSlide>
-              <MainRadioItem key={item.id} item={item} />
+              <MainContentEventItem key={item.id} item={item} />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -38,4 +38,4 @@ function MainContentRadio({ className }) {
   );
 }
 
-export default MainContentRadio;
+export default MainContentEvent;

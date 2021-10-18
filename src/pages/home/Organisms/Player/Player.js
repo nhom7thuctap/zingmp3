@@ -2,6 +2,7 @@ import './player.scss';
 import PlayerTopbar from '../../Molecules/PlayerTopbar/PlayerTopbar';
 import PlayerCurrent from '../../Molecules/PlayerCurrent/PlayerCurrent';
 import PlayerItems from '../../Molecules/PlayerItems/PlayerItems';
+
 function Player() {
   return (
     <div className="player">

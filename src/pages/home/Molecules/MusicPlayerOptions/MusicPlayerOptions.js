@@ -2,7 +2,7 @@ import './musicPlayerOptions.scss';
 import { useState } from 'react';
 
 function MusicPlayerOptions() {
-  const [value, onChange] = useState(1);
+  const [value, onChange] = useState(50);
   return (
     <div className="musicPlayer-options">
       <ul className="icon">

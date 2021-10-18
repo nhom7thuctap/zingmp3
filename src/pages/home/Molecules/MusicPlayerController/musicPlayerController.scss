@@ -77,12 +77,12 @@
       input[type='range'] {
         -webkit-appearance: none;
         width: 550px;
-        height: 3px;
+        height: 5px;
         border-radius: 20px;
         background-color: rgb(97, 96, 96);
         outline: none;
         overflow: hidden;
-        transition: all.1s;
+        transition: 0.2s ease;
         &::-webkit-slider-thumb {
           -webkit-appearance: none;
           width: 10px;

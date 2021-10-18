@@ -1,6 +1,6 @@
 .musicPlayer-options {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   width: 15%;
   .icon {
@@ -20,8 +20,9 @@
         cursor: not-allowed;
       }
     }
-    .seekbar {
-      height: 2px;
-    }
+  }
+  .seekbar {
+    margin-left: 15px;
+    height: 4px;
   }
 }

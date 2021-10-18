@@ -7,6 +7,11 @@ import MainContentRadio from '../../../Molecules/MainContent/MainContentRadio/Ma
 import MainContentChart from '../../../Molecules/MainContent/MainContentChart/MainContentChart';
 import MainContentFollow from '../../../Molecules/MainContent/MainContentFollow/MainContentFollow';
 import MainContentTop100 from '../../../Molecules/MainContent/MainContentTop100/MainContentTop100';
+import MainContentEvent from '../../../Molecules/MainContent/MainContentEven/MainContentEvent';
+import MainContentRelease from '../../../Molecules/MainContent/MainContentRelease/MainContentRelease';
+import MainContentZingChoice from '../../../Molecules/MainContent/MainContentZingChoice/MainContentZingChoice';
+import MainFooter from '../../../Molecules/MainFooter/MainFooter';
+
 function MainExplore() {
   return (
     <>
@@ -18,6 +23,10 @@ function MainExplore() {
       <MainContentChart />
       <MainContentFollow />
       <MainContentTop100 />
+      <MainContentEvent />
+      <MainContentRelease />
+      <MainContentZingChoice />
+      <MainFooter />
     </>
   );
 }
