@@ -37,6 +37,7 @@ function MainContentFollow() {
           <SwiperSlide>
             <div className="img-item" key={item.id}>
               <img src={item.item} alt=""></img>
+              <div className="overlay"></div>
             </div>
           </SwiperSlide>
         ))}

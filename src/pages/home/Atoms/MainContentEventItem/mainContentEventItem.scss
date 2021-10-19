@@ -3,7 +3,9 @@
   .event-img {
     position: relative;
     width: 100%;
+    border-radius: 5px;
     overflow: hidden;
+    cursor: pointer;
     img {
       width: 100%;
       border-radius: 5px;

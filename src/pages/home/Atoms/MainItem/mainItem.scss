@@ -2,10 +2,12 @@
   color: #fff;
   .item-img {
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 5px;
     position: relative;
+    cursor: pointer;
+
     img {
-      border-radius: 10px;
+      border-radius: 5px;
       width: 100%;
       object-fit: cover;
       object-position: center;
@@ -99,6 +101,9 @@
     text-overflow: ellipsis;
     width: 100%;
     max-width: 100%;
+    text-transform: capitalize;
+    cursor: pointer;
+
     &:hover {
       color: #ce6bf8;
     }

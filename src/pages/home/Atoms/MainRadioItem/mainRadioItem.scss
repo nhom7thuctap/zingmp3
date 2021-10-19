@@ -1,5 +1,6 @@
 .radio-item {
   color: #fff;
+  text-align: center;
   .radio-img {
     position: relative;
     border-radius: 50%;
@@ -88,11 +89,13 @@
     }
   }
   .radio-name {
+    display: inline-block;
     margin-top: 20px;
     text-align: center;
     font-weight: 600;
     font-size: 16px;
-    :hover {
+    cursor: pointer;
+    &:hover {
       color: #c662ef;
     }
   }
