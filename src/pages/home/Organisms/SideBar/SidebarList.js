@@ -6,6 +6,7 @@ const listItem = [
     menuName: 'Cá nhân',
     isActive: false,
     link: '/personal',
+    isFirstItem: true,
   },
   {
     icon: 'far fa-dot-circle',

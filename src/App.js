@@ -8,6 +8,7 @@ import Player from './pages/home/Organisms/Player/Player';
 import MainHeader from './pages/home/Molecules/MainHeader/MainHeader';
 import MusicPlayer from './pages/home/Organisms/MusicPlayer/MusicPlayer';
 import MainFollow from './pages/home/Organisms/Main/MainFollow/MainFollow';
+import SignupPage from './forms/SignupForm/SignupPage';
 function App() {
   return (
     <div className="App">
@@ -20,6 +21,10 @@ function App() {
               path="/"
               exact
               component={(props) => <MainExplore {...props} />}
+            />
+            <Route
+              path="/personal"
+              component={(props) => <SignupPage {...props} />}
             />
             <Route
               path="/zingchart"
