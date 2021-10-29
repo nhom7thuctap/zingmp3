@@ -44,7 +44,7 @@ function SelectField(props) {
           options={options}
           className={showError ? 'is-invalid' : ''}
         />
-        <div className={showError ? 'is-invalid' : ''}></div>
+        {console.log(showError)}
       </FormGroup>
       <ErrorMessage name={name} component={FormFeedback} />
     </div>

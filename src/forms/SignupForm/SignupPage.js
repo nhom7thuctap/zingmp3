@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router';
 import { addUser } from '../Slice';
 import SignupForm from './components/SignupForm';
+import { randomNumber } from '../../utils/common';
 import './signupPage.scss';
 
 function SignupPage(props) {
@@ -14,7 +15,11 @@ function SignupPage(props) {
       console.log('form submit: ', values);
 
       setTimeout(() => {
-        const action = addUser(values);
+        const newUser = {
+          ...values,
+          id: randomNumber(10000, 99999),
+        };
+        const action = addUser(newUser);
         console.log({ action });
         dispatch(action);
         history.push('/user');
