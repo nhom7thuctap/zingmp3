@@ -44,8 +44,8 @@ function MainContentRelease() {
           }}
         >
           {listRelease.map((item) => (
-            <SwiperSlide>
-              <MainContentReleaseItem key={item.id} item={item} />
+            <SwiperSlide key={item.id}>
+              <MainContentReleaseItem item={item} />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -60,8 +60,8 @@ function MainContentRelease() {
           }}
         >
           {listItem.map((item) => (
-            <SwiperSlide>
-              <MainItem key={item.id} item={item} />
+            <SwiperSlide key={item.id}>
+              <MainItem item={item} />
             </SwiperSlide>
           ))}
         </Swiper>

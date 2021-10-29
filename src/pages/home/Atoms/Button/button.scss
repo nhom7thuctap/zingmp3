@@ -1,9 +1,10 @@
 .button {
+  text-transform: uppercase;
   display: block;
   margin: 20px auto 0;
   padding: 10px 40px;
   border-radius: 20px;
-  background: inherit;
+  background: #7200a1;
   outline: none;
   border: 1px solid #fff;
   color: #fff;
@@ -27,5 +28,13 @@
   border: none;
   &:hover {
     background-color: #7500a7;
+  }
+}
+.buy-vip-btn {
+  border: none;
+  color: #000;
+  background-color: #ffdb00;
+  &:hover {
+    background-color: #c5ab01;
   }
 }

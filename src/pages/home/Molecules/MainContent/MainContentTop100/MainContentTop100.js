@@ -26,8 +26,8 @@ function MainContentTop100() {
       <div className="main-suggestion">
         <Swiper spaceBetween={30} slidesPerView={5}>
           {listItem.map((item) => (
-            <SwiperSlide>
-              <MainItem className="top100" key={item.id} item={item} />
+            <SwiperSlide key={item.id}>
+              <MainItem className="top100" item={item} />
             </SwiperSlide>
           ))}
         </Swiper>

@@ -28,8 +28,8 @@ function MainContentEvent() {
       <div className="main-event">
         <Swiper spaceBetween={30} slidesPerView={3}>
           {listEvent.map((item) => (
-            <SwiperSlide>
-              <MainContentEventItem key={item.id} item={item} />
+            <SwiperSlide key={item.id}>
+              <MainContentEventItem item={item} />
             </SwiperSlide>
           ))}
         </Swiper>

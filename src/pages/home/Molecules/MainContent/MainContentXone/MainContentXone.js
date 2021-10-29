@@ -27,8 +27,8 @@ function MainContentXone() {
       <div className="main-xone">
         <Swiper spaceBetween={30} slidesPerView={5}>
           {listItem.map((item) => (
-            <SwiperSlide>
-              <MainItem key={item.id} item={item} />
+            <SwiperSlide key={item.id}>
+              <MainItem item={item} />
             </SwiperSlide>
           ))}
         </Swiper>

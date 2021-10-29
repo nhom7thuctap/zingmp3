@@ -32,8 +32,8 @@ function MainContentSlider() {
         }}
       >
         {listImg.map((item) => (
-          <SwiperSlide>
-            <div className="img-item" key={item.id}>
+          <SwiperSlide key={item.id}>
+            <div className="img-item">
               <img src={item.item} alt=""></img>
             </div>
           </SwiperSlide>

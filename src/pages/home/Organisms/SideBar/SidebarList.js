@@ -58,6 +58,12 @@ const listItem = [
     isActive: false,
     link: '/mv',
   },
+  {
+    icon: 'fas fa-user',
+    menuName: 'List User',
+    isActive: false,
+    link: '/user',
+  },
 ];
 
 function SidebarList() {

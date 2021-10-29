@@ -1,5 +1,45 @@
 .sidebar {
-  width: 350px;
+  width: 100%;
+  max-width: 250px;
+  height: calc(100vh - 140px);
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 5px; /* Chiều rộng vùng chứa scrollbar */
+    opacity: 0;
+    background: transparent;
+  }
+  &::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.13); /* Màu nền ngoài của thanh scrollbar */
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #918f8f80; /* Màu của thanh cuộn (scroll thumb) */
+    border-radius: 5px; /* Bo góc scroll thumb */
+  }
+  &::-webkit-scrollbar:hover {
+    opacity: 1;
+  }
   background-color: #221b2f;
   padding: 20px 0;
+  .sidebar-create-playlist {
+    position: fixed;
+    bottom: 90px;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(112, 112, 112, 0.658);
+    background-color: inherit;
+    color: #eee;
+    z-index: 100;
+    .title {
+      margin: 0 0 0 10px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .icon {
+      margin-left: 20px;
+      font-weight: 400;
+      font-size: 40px;
+    }
+  }
 }

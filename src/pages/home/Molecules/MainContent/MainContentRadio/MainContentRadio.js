@@ -28,8 +28,8 @@ function MainContentRadio({ className }) {
       <div className="main-radio-wrapper">
         <Swiper spaceBetween={20} slidesPerView={7} navigation>
           {listRadio.map((item) => (
-            <SwiperSlide>
-              <MainRadioItem key={item.id} item={item} />
+            <SwiperSlide key={item.id}>
+              <MainRadioItem item={item} />
             </SwiperSlide>
           ))}
         </Swiper>

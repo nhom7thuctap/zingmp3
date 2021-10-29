@@ -17,13 +17,13 @@ function MusicPlayerCurrent() {
   return (
     <div className="musicPlayer-current">
       {listSong.map((song) => (
-        <>
+        <div key={song.id}>
           {song.isPlay ? (
-            <PlayerItem className="music-player" key={song.id} song={song} />
+            <PlayerItem className="music-player" song={song} />
           ) : (
             ''
           )}
-        </>
+        </div>
       ))}
     </div>
   );

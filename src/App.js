@@ -9,6 +9,7 @@ import MainHeader from './pages/home/Molecules/MainHeader/MainHeader';
 import MusicPlayer from './pages/home/Organisms/MusicPlayer/MusicPlayer';
 import MainFollow from './pages/home/Organisms/Main/MainFollow/MainFollow';
 import SignupPage from './forms/SignupForm/SignupPage';
+import { MainListUser } from './pages/home/Organisms/Main/MainListUser/MainListUser';
 function App() {
   return (
     <div className="App">
@@ -37,6 +38,10 @@ function App() {
             <Route
               path="/follow"
               component={(props) => <MainFollow {...props} />}
+            />
+            <Route
+              path="/user"
+              component={(props) => <MainListUser {...props} />}
             />
           </Switch>
         </div>

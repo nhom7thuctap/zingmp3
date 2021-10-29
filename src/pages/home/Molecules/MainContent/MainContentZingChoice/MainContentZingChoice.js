@@ -26,8 +26,8 @@ function MainContentZingChoice() {
       <div className="main-zing-choice">
         <Swiper spaceBetween={30} slidesPerView={3}>
           {listItem.map((item) => (
-            <SwiperSlide>
-              <MainContentZingChoiceItem key={item.id} item={item} />
+            <SwiperSlide key={item.id}>
+              <MainContentZingChoiceItem item={item} />
             </SwiperSlide>
           ))}
         </Swiper>
