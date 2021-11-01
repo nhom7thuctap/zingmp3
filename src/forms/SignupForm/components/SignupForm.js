@@ -7,14 +7,9 @@ import './signupForm.scss';
 import * as Yup from 'yup';
 
 function SignupForm(props) {
-  const initialValues = {
-    username: '',
-    email: '',
-    password: '',
-    confirmPassword: '',
-    categoryId: null,
-  };
+  const { initialValues, isAddMode } = props;
 
+  console.log('initialvalue props: ', initialValues);
   const validationSchema = Yup.object().shape({
     username: Yup.string().required('This field this required.'),
     email: Yup.string()
@@ -36,8 +31,7 @@ function SignupForm(props) {
       onSubmit={props.onSubmit}
     >
       {(formikProps) => {
-        const { values, error, isSubmitting, touched } = formikProps;
-        console.log({ values, error, touched });
+        const { isSubmitting } = formikProps;
 
         return (
           <Form className="form">
@@ -82,8 +76,8 @@ function SignupForm(props) {
               <Button className="btn reset" type="reset" color="danger">
                 Reset
               </Button>
-              <Button className="btn submit" type="submit" color="primary">
-                Register
+              <Button type="submit" color="primary">
+                {isAddMode ? 'Register' : 'Edit'}
                 {isSubmitting && <Spinner size="sm" />}
               </Button>
             </FormGroup>

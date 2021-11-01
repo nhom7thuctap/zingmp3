@@ -8,7 +8,12 @@ export const MainListUser = (props) => {
   const dispatch = useDispatch();
   const users = useSelector((state) => state.users);
   const history = useHistory();
-  console.log('list of users: ', users);
+
+  const handleUserEditClick = (user) => {
+    console.log('user Edit', user);
+    const editUserUrl = `/users/${user.id}`;
+    history.push(editUserUrl);
+  };
 
   const handleUserRemoveClick = (user) => {
     console.log('remove: ', user);
@@ -19,7 +24,11 @@ export const MainListUser = (props) => {
 
   return (
     <div style={{ background: '#fff', width: '60%', margin: '50px auto' }}>
-      <ListUser userList={users} onUserRemoveClick={handleUserRemoveClick} />
+      <ListUser
+        userList={users}
+        onUserEditClick={handleUserEditClick}
+        onUserRemoveClick={handleUserRemoveClick}
+      />
     </div>
   );
 };

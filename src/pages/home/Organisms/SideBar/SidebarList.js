@@ -5,14 +5,14 @@ const listItem = [
     icon: 'fas fa-music',
     menuName: 'Cá nhân',
     isActive: false,
-    link: '/personal',
+    link: '/users/add',
     isFirstItem: true,
   },
   {
     icon: 'far fa-dot-circle',
     menuName: 'Khám phá',
     isActive: true,
-    link: '/',
+    link: '/explore',
   },
   {
     icon: 'fas fa-chart-line',
@@ -62,7 +62,7 @@ const listItem = [
     icon: 'fas fa-user',
     menuName: 'List User',
     isActive: false,
-    link: '/user',
+    link: '/users',
   },
 ];
 

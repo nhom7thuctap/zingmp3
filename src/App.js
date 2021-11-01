@@ -1,5 +1,10 @@
 import './App.scss';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+  Switch,
+} from 'react-router-dom';
 import Sidebar from './pages/home/Organisms/SideBar/Sidebar';
 import MainExplore from './pages/home/Organisms/Main/MainExplore/MainExplore';
 import MainZingChart from './pages/home/Organisms/Main/MainZingChart/MainZingChart';
@@ -8,8 +13,9 @@ import Player from './pages/home/Organisms/Player/Player';
 import MainHeader from './pages/home/Molecules/MainHeader/MainHeader';
 import MusicPlayer from './pages/home/Organisms/MusicPlayer/MusicPlayer';
 import MainFollow from './pages/home/Organisms/Main/MainFollow/MainFollow';
-import SignupPage from './forms/SignupForm/SignupPage';
 import { MainListUser } from './pages/home/Organisms/Main/MainListUser/MainListUser';
+import User from './pages/home/Organisms/Main';
+
 function App() {
   return (
     <div className="App">
@@ -18,15 +24,22 @@ function App() {
         <div className="main">
           <MainHeader />
           <Switch>
+            <Redirect exact from="/" to="/explore" />
+
             <Route
-              path="/"
+              path="/explore"
               exact
               component={(props) => <MainExplore {...props} />}
             />
-            <Route
+            <Route path="/users" component={User} />
+            {/* <Route
               path="/personal"
               component={(props) => <SignupPage {...props} />}
             />
+            <Route
+              path="/personal/:userId"
+              component={(props) => <SignupPage {...props} />}
+            /> */}
             <Route
               path="/zingchart"
               component={(props) => <MainZingChart {...props} />}

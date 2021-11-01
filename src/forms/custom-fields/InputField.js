@@ -1,7 +1,7 @@
 import { ErrorMessage } from 'formik';
 import React from 'react';
 import { FormFeedback, FormGroup, Input, Label } from 'reactstrap';
-import './styles.scss';
+// import './styles.scss';
 
 function InputField(props) {
   const { field, form, type, label, placeholder, disabled } = props;
@@ -18,7 +18,6 @@ function InputField(props) {
       )}
 
       <Input
-        className="input"
         id={name}
         {...field}
         type={type}

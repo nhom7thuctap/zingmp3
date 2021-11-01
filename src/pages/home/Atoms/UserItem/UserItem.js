@@ -34,6 +34,7 @@ function UserItem(props) {
               className="btn btn-edit"
               value={inputValues.edit}
               onChange={handleOnChange}
+              onClick={handleEditClick}
             ></input>
             <input
               type="submit"
