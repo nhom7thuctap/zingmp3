@@ -1,7 +1,7 @@
-import './mainHeader.scss';
 import MainHeaderArrow from '../../Atoms/MainHeaderArrow/MainHeaderArrow';
-import MainHeaderSearch from '../../Atoms/MainHeaderSearch/MainHeaderSearch';
 import MainHeaderOptions from '../../Atoms/MainHeaderOptions/MainHeaderOptions';
+import MainHeaderSearch from '../../Atoms/MainHeaderSearch/MainHeaderSearch';
+import './mainHeader.scss';
 
 function MainHeader() {
   return (

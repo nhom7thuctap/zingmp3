@@ -1,0 +1,14 @@
+.personal-wrapper {
+  margin: 0 auto;
+  text-align: center;
+  .avatar {
+    width: 100px;
+    border-radius: 50%;
+  }
+  .name {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 32px;
+    color: #fff;
+  }
+}

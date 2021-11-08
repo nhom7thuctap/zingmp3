@@ -15,6 +15,7 @@ import MusicPlayer from './pages/home/Organisms/MusicPlayer/MusicPlayer';
 import MainFollow from './pages/home/Organisms/Main/MainFollow/MainFollow';
 import { MainListUser } from './pages/home/Organisms/Main/MainListUser/MainListUser';
 import User from './pages/home/Organisms/Main';
+import MainPersonal from './pages/home/Organisms/Main/MainPersonal/MainPersonal';
 
 function App() {
   return (
@@ -32,11 +33,11 @@ function App() {
               component={(props) => <MainExplore {...props} />}
             />
             <Route path="/users" component={User} />
-            {/* <Route
-              path="/personal"
-              component={(props) => <SignupPage {...props} />}
-            />
             <Route
+              path="/personal"
+              component={(props) => <MainPersonal {...props} />}
+            />
+            {/* <Route
               path="/personal/:userId"
               component={(props) => <SignupPage {...props} />}
             /> */}

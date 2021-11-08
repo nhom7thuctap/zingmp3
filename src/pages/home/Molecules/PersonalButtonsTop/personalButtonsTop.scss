@@ -1,0 +1,14 @@
+.button-top-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  .button-more {
+    margin-left: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    color: #fff;
+    background-color: #574b5880;
+  }
+}

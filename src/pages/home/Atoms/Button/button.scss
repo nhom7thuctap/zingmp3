@@ -30,6 +30,20 @@
     background-color: #7500a7;
   }
 }
+.button-personal {
+  margin: 0 0 0 10px;
+  background-color: #574b58a4;
+  padding: 5px 15px;
+  font-weight: 400;
+  font-size: 12px;
+  border: none;
+  color: rgba(255, 255, 255, 0.753);
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.336);
+    color: #fff;
+  }
+}
 .buy-vip-btn {
   border: none;
   color: #000;
@@ -37,4 +51,9 @@
   &:hover {
     background-color: #c5ab01;
   }
+}
+.btn-navbar {
+  width: 120px;
+  margin-left: 0;
+  background: none;
 }

@@ -1,8 +1,8 @@
-import './musicPlayerCurrent.scss';
-import React, { useState, useEffect } from 'react';
-import db from '../PlayerItems/ListSong';
-import { onSnapshot, collection } from 'firebase/firestore';
+import { collection, onSnapshot } from 'firebase/firestore';
+import React, { useEffect, useState } from 'react';
 import PlayerItem from '../../Atoms/PlayerItem/PlayerItem';
+import db from '../PlayerItems/ListSong';
+import './musicPlayerCurrent.scss';
 // import CurrentSong from '../PlayerCurrent/CurrentSong';
 
 function MusicPlayerCurrent() {

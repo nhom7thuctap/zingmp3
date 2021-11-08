@@ -5,7 +5,7 @@ const listItem = [
     icon: 'fas fa-music',
     menuName: 'Cá nhân',
     isActive: false,
-    link: '/users/add',
+    link: '/personal',
     isFirstItem: true,
   },
   {

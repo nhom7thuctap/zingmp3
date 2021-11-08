@@ -1,15 +1,15 @@
-import './mainContentXone.scss';
-import React, { useState, useEffect } from 'react';
-import db from '../../PlayerItems/ListSong';
-import { onSnapshot, collection } from 'firebase/firestore';
-import MainItem from '../../../Atoms/MainItem/MainItem';
-
+import { collection, onSnapshot } from 'firebase/firestore';
+import React, { useEffect, useState } from 'react';
+import SwiperCore, { Autoplay, Navigation } from 'swiper';
+import 'swiper/';
+import 'swiper/components/navigation/navigation.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation, Autoplay } from 'swiper';
 import 'swiper/swiper-bundle.min.css';
 import 'swiper/swiper.min.css';
-import 'swiper/components/navigation/navigation.scss';
-import 'swiper/';
+import MainItem from '../../../Atoms/MainItem/MainItem';
+import db from '../../PlayerItems/ListSong';
+import './mainContentXone.scss';
+
 SwiperCore.use([Navigation, Autoplay]);
 
 function MainContentXone() {

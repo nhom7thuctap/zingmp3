@@ -1,5 +1,5 @@
+import React, { useEffect, useState } from 'react';
 import './musicPlayerController.scss';
-import React, { useState, useEffect } from 'react';
 
 function MusicPlayerController() {
   const [value, onChange] = useState(0);
