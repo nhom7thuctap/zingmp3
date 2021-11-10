@@ -9,6 +9,7 @@ function Sidebar() {
       <SidebarLogo />
       <SidebarList />
       <SidebarCard
+        LoginBtn={true}
         textCard="Đăng nhập để khám phá playlist dành riêng cho chính bạn."
         textBtn="đăng nhập"
       />

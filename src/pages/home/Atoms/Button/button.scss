@@ -1,5 +1,6 @@
 .button {
   text-transform: uppercase;
+  text-decoration: none;
   display: block;
   margin: 20px auto 0;
   padding: 10px 40px;
@@ -9,6 +10,7 @@
   border: 1px solid #fff;
   color: #fff;
   &:hover {
+    color: #fff;
     cursor: pointer;
     background: #47006657;
   }
@@ -49,6 +51,7 @@
   color: #000;
   background-color: #ffdb00;
   &:hover {
+    color: #000;
     background-color: #c5ab01;
   }
 }

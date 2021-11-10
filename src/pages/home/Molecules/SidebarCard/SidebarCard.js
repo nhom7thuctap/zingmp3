@@ -1,11 +1,17 @@
 import './sidebarCard.scss';
 import Button from '../../Atoms/Button/Button';
 
-function SidebarLogin({ textCard, textBtn, classNameCard, classNameBtn }) {
+function SidebarLogin({
+  textCard,
+  textBtn,
+  classNameCard,
+  classNameBtn,
+  LoginBtn,
+}) {
   return (
     <div className={`sidebar-login ${classNameCard}`}>
       <p>{textCard}</p>
-      <Button text={textBtn} className={classNameBtn} />
+      <Button LoginBtn={LoginBtn} text={textBtn} className={classNameBtn} />
     </div>
   );
 }

@@ -7,7 +7,7 @@ function MainPersonal() {
   return (
     <div className="personal">
       <PersonalButtonsTop />
-      <PersonalProfile avatar="./images/item2.jpg" name="Luna Lovegood" />
+      <PersonalProfile avatar="./images/radio7.jpg" name="Luna Lovegood" />
       <PersonalNavbar />
     </div>
   );
